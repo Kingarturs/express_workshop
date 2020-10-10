@@ -1,1 +1,1 @@
-# express_workshop
+# UAQ's Node.js Workshop!
