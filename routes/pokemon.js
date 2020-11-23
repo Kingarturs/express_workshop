@@ -82,7 +82,7 @@ pokemon.get('/:name([A-Za-z]*)', async(req, res, next) => {
     const name = req.params.name.toLowerCase();
     
     const pkmn = await db.query("SELECT * FROM pokemon WHERE pok_name=?", name, (err, rows) => {
-        if (rows.lenght >= 1) {
+        if (rows.length >= 1) {
             return res.status(200).json({ code: 200, message: pkmn });
         }
     });
